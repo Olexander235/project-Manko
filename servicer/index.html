@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Podkova:wght@400..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Services</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="/images/logo_transparent.png" alt="#"></div>
+    <button class="burger-menu" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+  </button>
+    <nav class="navbar">
+        <a href="./about/index.html">About the salon</a>
+        <a href="./servicer/index.html">Services</a>
+        <a href="#certificates">Certifications</a>
+        <a href="#price">Price</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contacts</a>
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/Vkhomutets" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fa fa-google"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+          <a  href="https://www.instagram.com/save_body_chicago/"><i class="fa fa-instagram"></i></a>
+        </div>
+        <a href="https://www.massagebook.com/business/24086155/select-product/services/?src=massagebook&ncf_source=friendly_url" class="btn-header">Sign up online</a>
+        <div class="language-selector">
+            <button onclick="setLanguage('ua')">UA</button>
+            <button onclick="setLanguage('ru')">RU</button>
+            <button onclick="setLanguage('en')">EN</button>
+        </div>
+    </nav>
+</header>
+
+<section class="services-section">
+  <h2 class="spa-title">Popular Services</h2>
+  <p class="spa-description">educes swelling. Lipolytic Massage: Targets fat deposits and improves skin elasticity. Anti-Cellulite Exercises: Tones problem areas and enhances results. Modeling Block: Shapes and sculpts the body. Recommended: 8-12 sessions for noticeable results.</p>
+  <div class="service-block">
+    <img src="./page-1.jpeg" alt="Service 1" class="service-image">
+    <div class="service-title">Услуга 1</div>
+    <button class="service-button" onclick="location.href='service1.html'">Перейти</button>
+  </div>
+  <div class="service-block">
+    <img src="./page-2.jpeg" alt="Service 2" class="service-image">
+    <div class="service-title">Услуга 2</div>
+    <button class="service-button" onclick="location.href='service2.html'">Перейти</button>
+  </div>
+  <div class="service-block">
+    <img src="./page-3.jpeg" alt="Service 3" class="service-image">
+    <div class="service-title">Услуга 3</div>
+    <button class="service-button" onclick="location.href='service3.html'">Перейти</button>
+  </div>
+  <div class="service-block">
+    <img src="./slide1.jpg" alt="Service 4" class="service-image">
+    <div class="service-title">Услуга 4</div>
+    <button class="service-button" onclick="location.href='service4.html'">Перейти</button>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.service-title').forEach(title => {
+    title.addEventListener('click', () => {
+      const block = title.parentElement;
+      block.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
